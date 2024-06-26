@@ -1,6 +1,6 @@
 ﻿namespace Exercicio1
 {
-    partial class FrmUsuarios
+    partial class FrmChamados
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            BtnSairUsuarios = new Button();
+            BtnSairChamados = new Button();
             SuspendLayout();
             // 
-            // BtnSairUsuarios
+            // BtnSairChamados
             // 
-            BtnSairUsuarios.BackColor = SystemColors.ActiveCaptionText;
-            BtnSairUsuarios.ForeColor = Color.White;
-            BtnSairUsuarios.Location = new Point(25, 380);
-            BtnSairUsuarios.Name = "BtnSairUsuarios";
-            BtnSairUsuarios.Size = new Size(139, 47);
-            BtnSairUsuarios.TabIndex = 2;
-            BtnSairUsuarios.Text = "Sair";
-            BtnSairUsuarios.UseVisualStyleBackColor = false;
-            BtnSairUsuarios.Click += BtnSair_Click;
+            BtnSairChamados.BackColor = SystemColors.ActiveCaptionText;
+            BtnSairChamados.ForeColor = Color.White;
+            BtnSairChamados.Location = new Point(25, 381);
+            BtnSairChamados.Name = "BtnSairChamados";
+            BtnSairChamados.Size = new Size(139, 47);
+            BtnSairChamados.TabIndex = 3;
+            BtnSairChamados.Text = "Sair";
+            BtnSairChamados.UseVisualStyleBackColor = false;
             // 
-            // FrmUsuarios
+            // FrmChamados
             // 
             AccessibleRole = AccessibleRole.Caret;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Highlight;
             ClientSize = new Size(800, 450);
-            Controls.Add(BtnSairUsuarios);
+            Controls.Add(BtnSairChamados);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "FrmUsuarios";
+            Name = "FrmChamados";
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
@@ -63,6 +62,6 @@
 
         #endregion
 
-        private Button BtnSairUsuarios;
+        private Button BtnSairChamados;
     }
 }
