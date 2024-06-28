@@ -1,3 +1,15 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using static DbContextGremio;
+
 namespace Exercicio1
 {
     public partial class FrmPrincipal : Form
@@ -5,14 +17,16 @@ namespace Exercicio1
         public FrmPrincipal()
         {
             InitializeComponent();
+            BancoDoGremio();
         }
 
-
-        private void BtnSair_Click(object sender, EventArgs e)
+        private void BancoDoGremio()
         {
-            new FrmUsuarios().ShowDialog();
+            using (var BancoDoGremio = new AppDbContextGremio())
+            {
+                BancoDoGremio.Database.Migrate();
+            }
         }
-
         private void BtnUsuarios_Click(object sender, EventArgs e)
         {
             new FrmUsuarios().ShowDialog();
@@ -23,9 +37,14 @@ namespace Exercicio1
             new FrmChamados().ShowDialog();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnSair_Click(object sender, EventArgs e)
         {
-            new FrmUsuarios().ShowDialog();
+            Application.Exit();
+        }
+
+        private void BtnGremio_Click_1(object sender, EventArgs e)
+        {
+            new FrmGremio().ShowDialog();
         }
     }
 }

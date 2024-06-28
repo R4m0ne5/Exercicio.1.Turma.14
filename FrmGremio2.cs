@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Exercicio1
 {
-    public partial class FrmUsuarios : Form
+    public partial class FrmGremio2 : Form
     {
-        public FrmUsuarios()
+        public FrmGremio2()
         {
             InitializeComponent();
         }
 
-        private void BtnSairUsuarios_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+
         }
     }
 }

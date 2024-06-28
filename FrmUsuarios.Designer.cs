@@ -33,31 +33,30 @@
             // 
             // BtnSairUsuarios
             // 
-            BtnSairUsuarios.BackColor = SystemColors.ActiveCaptionText;
-            BtnSairUsuarios.ForeColor = Color.White;
-            BtnSairUsuarios.Location = new Point(25, 380);
+            BtnSairUsuarios.BackColor = SystemColors.InactiveCaptionText;
+            BtnSairUsuarios.ForeColor = SystemColors.ButtonFace;
+            BtnSairUsuarios.Location = new Point(33, 381);
             BtnSairUsuarios.Name = "BtnSairUsuarios";
-            BtnSairUsuarios.Size = new Size(139, 47);
-            BtnSairUsuarios.TabIndex = 2;
+            BtnSairUsuarios.Size = new Size(137, 44);
+            BtnSairUsuarios.TabIndex = 0;
             BtnSairUsuarios.Text = "Sair";
             BtnSairUsuarios.UseVisualStyleBackColor = false;
-            BtnSairUsuarios.Click += BtnSair_Click;
+            BtnSairUsuarios.Click += BtnSairUsuarios_Click;
             // 
             // FrmUsuarios
             // 
-            AccessibleRole = AccessibleRole.Caret;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Highlight;
             ClientSize = new Size(800, 450);
             Controls.Add(BtnSairUsuarios);
             FormBorderStyle = FormBorderStyle.None;
-            MaximizeBox = false;
-            MinimizeBox = false;
             Name = "FrmUsuarios";
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
+            Text = "FrmUsuarios";
+            TopMost = true;
             ResumeLayout(false);
         }
 

@@ -16,5 +16,10 @@ namespace Exercicio1
         {
             InitializeComponent();
         }
+
+        private void BtnSairChamados_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -33,30 +33,29 @@
             // 
             // BtnSairChamados
             // 
-            BtnSairChamados.BackColor = SystemColors.ActiveCaptionText;
-            BtnSairChamados.ForeColor = Color.White;
-            BtnSairChamados.Location = new Point(25, 381);
+            BtnSairChamados.BackColor = SystemColors.InactiveCaptionText;
+            BtnSairChamados.ForeColor = SystemColors.ButtonFace;
+            BtnSairChamados.Location = new Point(29, 376);
             BtnSairChamados.Name = "BtnSairChamados";
-            BtnSairChamados.Size = new Size(139, 47);
-            BtnSairChamados.TabIndex = 3;
+            BtnSairChamados.Size = new Size(137, 44);
+            BtnSairChamados.TabIndex = 1;
             BtnSairChamados.Text = "Sair";
             BtnSairChamados.UseVisualStyleBackColor = false;
+            BtnSairChamados.Click += BtnSairChamados_Click;
             // 
             // FrmChamados
             // 
-            AccessibleRole = AccessibleRole.Caret;
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Highlight;
             ClientSize = new Size(800, 450);
             Controls.Add(BtnSairChamados);
+            ForeColor = SystemColors.Highlight;
             FormBorderStyle = FormBorderStyle.None;
-            MaximizeBox = false;
-            MinimizeBox = false;
             Name = "FrmChamados";
-            ShowIcon = false;
-            ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
+            Text = "FrmChamados";
+            TopMost = true;
             ResumeLayout(false);
         }
 
